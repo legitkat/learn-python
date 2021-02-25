@@ -1,70 +1,85 @@
-## test file
 '''
-    this is also a comment
+    notes made properly below
 '''
-# for i in range(1, 11, 2):
-#     print(i)
+###
+#fcc lec 1
 
-# name = "myname"
+'''
+    dir(var)
+    type(var) 
+    help(on diff functions and stuff)
+'''
 
-# for row in range(5):  
-#     for column in range(5):
-#         print(column, end = '')
-#     print()
+# function
 
-# for i in range(1, 11):
-#     for j in range(1, i+1):
-#         print(j, end='')
-#     print()
+def new_line():
+    print()
 
-# for i in range(1, 13):
-#     for j in range(1, i+1):
-#         print('{:3}'.format(j), end='')
-#     print()
+# .upper() and .format
 
-# name = "your_name"
+name = "myname"
+print("my name is {}".format(name))
+print("my name is {}".format(name.upper()))
+new_line()
 
-# def greet():
-#     print("Hello {} nice to meet you".format(name))
+# range, for loop and f string
 
-# greet()
+for i in range(3):
+    print(f"{i}st ")
 
-# import random
+new_line()
 
-# numbers = [4, 5, 2, 6, 1, 7, 8, 3]
+# lists and range (last term doesnt get included in range)
 
-# list_numbers = [[], [], [], []]
+my_list = list(range(1, 6, 2))
+for elements in my_list:
+    print(elements)
 
-# for i in range(2):
-#     for j in range(4):
-#        list_numbers[j].append(numbers.pop())
+new_line()
 
-# print()
-# for list_number in list_numbers:
-#     print(list_number)
+# using list like an array (i guess thats what u call it) (last term doesnt get included just like range)
 
-# numbers = [2, -1, 4, -3, 5, 3, -5]
+name = "myname"
+print(name[0])
+print(name[1:4])
+print(name[2:])
 
-# positive_int = [number for number in numbers if number > 0]
-# negative_int = [number for number in numbers if number < 0]
+new_line()
 
-# print("The postive number list is", positive_int , "and the negative number list is", negative_int)
+# even further (3rd arguement just like range)
 
-# import random
+name = "myname"
+print(name[::-1])
+print(name[::2])
 
-# numbers = [1, 2, 3, 4, 5, 6, 7, 8]
-# shuffled_numbers = numbers
+new_line()
 
-# random.shuffle(shuffled_numbers)
+# if elif else
 
-# print(shuffled_numbers)
+name = "myname"
 
-numbers = [[3, 6], [8, 2], [7, 5], [1, 4]]
+if name == "myname":
+    print(f"Welcome {name}")
+elif name == "":
+    print("Please enter a name")
 
-def my_key(x):
-    return x[-1]
+# escape seq
 
-numbers = sorted(numbers, key=my_key)
-# numbers.sort(key=my_key)
+print("He said,\"Use this to solve ur problem\"")
+new_line()
 
-print(numbers)
+# print with no newline (\n)
+
+my_list = [1, 2, 3, 4, 5]
+
+for elements in my_list:
+    print(elements)
+
+new_line()
+
+for elements in my_list:
+    print(elements, end='')
+
+new_line()
+
+#
